@@ -1,8 +1,9 @@
 import React from "react";
 
 export type ButtonProps = {
+  borderRadius: "small" | "large";
   children: React.ReactNode;
-  className: string;
+  className?: string;
   /**
    * Indicates if the button should be disabled
    */

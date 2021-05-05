@@ -4,6 +4,7 @@ import { ButtonComponent } from "./style";
 const defaultButtonProps = {
   renderMode: "outline",
   disabled: false,
+  borderRadius: "small",
 };
 
 const Button = ({
@@ -12,6 +13,7 @@ const Button = ({
   disabled,
   renderMode,
   onClick,
+  borderRadius,
 }: ButtonProps & typeof defaultButtonProps) => {
   return (
     <ButtonComponent
@@ -19,6 +21,7 @@ const Button = ({
       disabled={disabled}
       renderMode={renderMode}
       onClick={onClick}
+      borderRadius={borderRadius}
     >
       {children}
     </ButtonComponent>

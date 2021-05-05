@@ -58,4 +58,6 @@ const TextInput = ({
   );
 };
 
+TextInput.defaultProps = defaultInputProps;
+
 export default TextInput;

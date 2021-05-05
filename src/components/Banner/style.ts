@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BannerCardsContainer } from "./BannerCards/style";
 
 export const BannerComponent = styled.section`
   background: ${({ theme }) => theme.colors.jussiGreen};
@@ -27,18 +28,46 @@ export const BannerComponent = styled.section`
     margin-bottom: 1rem;
   }
 
+  ${BannerCardsContainer} {
+    display: none;
+  }
+
   @media only screen and (min-width: 48em) {
     padding: 2.5rem 4.838rem;
   }
 
   @media only screen and (min-width: 80em) {
     padding: 5rem 7.375rem;
+    display: grid;
+    grid-template-areas:
+      ". cards"
+      "title cards"
+      "text cards"
+      "button cards";
+    gap: 0 1.5625rem;
+
+    .TitleContainer {
+      grid-area: title;
+    }
+
     .BannerButton,
     .BannerParagraph {
       margin-left: 5.4rem;
     }
+
+    .BannerButton {
+      max-width: 196px;
+      grid-area: button;
+    }
+
     .BannerParagraph {
       margin-bottom: 2rem;
+      grid-area: text;
+    }
+
+    ${BannerCardsContainer} {
+      display: grid;
+      grid-area: cards;
     }
   }
 `;

@@ -4,7 +4,7 @@ import { ButtonComponent } from "./style";
 const defaultButtonProps = {
   renderMode: "outline",
   disabled: false,
-  borderRadius: "small",
+  borderRadius: "xs",
 };
 
 const Button = ({

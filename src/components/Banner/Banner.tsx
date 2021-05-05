@@ -1,6 +1,7 @@
 import useWindowSize, { Size } from "../../hooks/useWindowSize";
 import Button from "../Button";
 import Text from "../Text";
+import BannerCards from "./BannerCards/BannerCards";
 import { BannerComponent } from "./style";
 
 const Banner = () => {
@@ -26,6 +27,7 @@ const Banner = () => {
         Precisa criar sua loja ou migrar de plataforma?
       </Text>
       <Button className="BannerButton">Veja nossas soluções</Button>
+      <BannerCards />
     </BannerComponent>
   );
 };

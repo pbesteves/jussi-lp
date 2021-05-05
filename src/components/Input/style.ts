@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { HeaderComponent } from "../Header/style";
 import { InputProps } from "./input";
 
 export const Label = styled.label`
@@ -11,14 +12,21 @@ export const Label = styled.label`
     top: 0.3125rem;
   }
 `;
+
 export const TextInputComponent = styled.input<InputProps>`
   width: 100%;
-  border-radius: ${({ theme }) => theme.borderRadius.large};
+
   border: ${({ theme }) => `1px solid ${theme.colors.gray}`};
   padding: 8px 16px;
-  &::placeholder {
-    color: ${({ placeholderColor, theme }) =>
-      placeholderColor ? placeholderColor : theme.colors.jussiPink};
-  }
+
   font-family: ${({ theme }) => theme.fonts};
+
+  ${HeaderComponent} & {
+    border-radius: ${({ theme }) => theme.borderRadius.large};
+
+    &::placeholder {
+      color: ${({ placeholderColor, theme }) =>
+        placeholderColor ? placeholderColor : theme.colors.jussiPink};
+    }
+  }
 `;

@@ -17,6 +17,8 @@ export type DefaultThemeType = {
     bold: number;
   };
   borderRadius: {
+    xxs: string;
+    xs: string;
     small: string;
     large: string;
   };
@@ -44,7 +46,9 @@ const DefaultTheme: DefaultThemeType = {
     bold: 700,
   },
   borderRadius: {
-    small: "0.375rem",
+    xxs: "0.25rem",
+    xs: "0.375rem",
+    small: "0.5rem",
     large: "1.5rem",
   },
   boxShadows: {

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { HeaderComponent } from "../Header/style";
 import { ButtonProps } from "./button";
 
 export const ButtonComponent = styled.button<ButtonProps>`
@@ -8,10 +9,14 @@ export const ButtonComponent = styled.button<ButtonProps>`
     renderMode === "outline" ? `1px solid ${theme.colors.black}` : 0};
 
   border-radius: ${({ borderRadius, theme }) =>
-    borderRadius ? theme.borderRadius[borderRadius] : theme.borderRadius.small};
+    borderRadius ? theme.borderRadius[borderRadius] : theme.borderRadius.xs};
   cursor: pointer;
 
   font-family: ${({ theme }) => theme.fonts};
   font-size: ${({ theme }) => theme.fontSizes.regular};
   padding: 0.75rem 1.2rem;
+
+  ${HeaderComponent} & {
+    padding: 0;
+  }
 `;

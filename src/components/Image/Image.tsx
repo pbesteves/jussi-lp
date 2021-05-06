@@ -1,9 +1,9 @@
 import { ImageProps } from "./image";
-import { ImageComponent } from "./style";
+import { ImageComponent, Picture } from "./style";
 
 const Image = ({ urls, alt, width, height }: ImageProps) => {
   return (
-    <picture>
+    <Picture>
       {urls.srcSets &&
         urls.srcSets.map(({ srcSet, screenWidth }, idx) => (
           <source
@@ -14,7 +14,7 @@ const Image = ({ urls, alt, width, height }: ImageProps) => {
         ))}
 
       <ImageComponent src={urls.src} alt={alt} width={width} height={height} />
-    </picture>
+    </Picture>
   );
 };
 

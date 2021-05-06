@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import WebFont from "webfontloader";
+import About from "../About";
 import Banner from "../Banner";
 import Header from "../Header";
 import Solutions from "../Solutions";
@@ -23,6 +24,7 @@ const App = () => {
         <Banner />
         <Stores />
         <Solutions />
+        <About />
       </AppComponent>
     </Router>
   );

@@ -47,7 +47,7 @@ const Solutions = () => {
   return (
     <Wrapper>
       <div className="TitleWrapper">
-        <Text fontSize="medium" fontWeight="bold" uppercase>
+        <Text as="h2" fontSize="medium" fontWeight="bold" uppercase>
           <Text as="span" color="jussiGreen">
             / /
           </Text>

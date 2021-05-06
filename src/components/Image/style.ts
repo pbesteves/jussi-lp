@@ -23,13 +23,16 @@ export const ImageComponent = styled.img`
 
 export const Picture = styled.picture`
   ${AboutWrapper} & {
-    grid-column: 1 / -1;
-    grid-row: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-self: center;
-    justify-self: baseline;
-
+    display: none;
+    @media only screen and (min-width: 48em) {
+      grid-column: 1 / -1;
+      grid-row: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-self: center;
+      justify-self: baseline;
+    }
+    
     @media only screen and (min-width: 90em) {
       margin-right: 13rem;
       justify-self: end;

@@ -16,7 +16,9 @@ export const Wrapper = styled.div`
   @media only screen and (min-width: 80em) {
     cursor: default;
     padding-left: 8.55rem;
+    overflow-x: hidden;
   }
+  
   @media only screen and (min-width: 90em) {
     cursor: default;
     padding-left: 11rem;

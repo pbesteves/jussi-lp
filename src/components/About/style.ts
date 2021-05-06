@@ -44,6 +44,7 @@ export const Wrapper = styled.section`
       justify-self: start;
       margin-left: 1.2rem;
       grid-row: 1;
+      padding: 2rem 0;
 
       h2 {
         width: 11ch;
@@ -64,10 +65,13 @@ export const Wrapper = styled.section`
       height: 100%;
     }
   }
+
   @media only screen and (min-width: 90em) {
     grid-template-rows: 44.375rem;
     .About {
       margin-left: 13rem;
+      padding-top: 0;
+      padding-bottom: 3.7rem;
     }
     .RightBlock {
       background: ${({ theme }) => theme.colors.gray};

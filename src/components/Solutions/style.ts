@@ -24,7 +24,7 @@ export const Wrapper = styled.section`
       list-style-type: initial;
       margin-left: 0.7rem;
       li {
-          line-height: 18px;
+        line-height: 18px;
         &::marker {
           font-size: 10px;
         }
@@ -36,6 +36,8 @@ export const Wrapper = styled.section`
     padding-top: 3.5rem;
     gap: 1.5rem;
     margin: 0 7.35rem;
+    overflow-x: hidden;
+    cursor: default;
   }
 
   @media only screen and (min-width: 90em) {

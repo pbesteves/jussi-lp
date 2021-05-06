@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import WebFont from "webfontloader";
 import Banner from "../Banner";
 import Header from "../Header";
+import Stores from "../Stores";
 import { AppComponent } from "./style";
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
       <AppComponent>
         <Header />
         <Banner />
+        <Stores />
       </AppComponent>
     </Router>
   );

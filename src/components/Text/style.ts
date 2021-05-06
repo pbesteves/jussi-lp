@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Wrapper as StoresWrapper } from "../Stores/style";
 import { TextProps } from "./text";
 
 export const TextComponent = styled.span<TextProps>`
@@ -12,4 +13,9 @@ export const TextComponent = styled.span<TextProps>`
 
   text-transform: ${({ uppercase }) => (uppercase ? "uppercase" : "initial")};
   width: ${({ width }) => width};
+
+  ${StoresWrapper} & {
+    flex-shrink: 0;
+    margin-right: 3rem;
+  }
 `;

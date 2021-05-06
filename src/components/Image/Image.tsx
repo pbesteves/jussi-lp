@@ -8,7 +8,7 @@ const Image = ({ urls, alt, width, height }: ImageProps) => {
           <source
             key={idx}
             srcSet={srcSet}
-            media={`(min-width: ${screenWidth})`}
+            media={`(min-width: ${screenWidth}px)`}
           />
         ))}
 

@@ -16,8 +16,11 @@ export const Label = styled.label`
   ${NewsletterWrapper} & {
     border: 0;
     border-bottom: ${({ theme }) => `1px solid ${theme.colors.jussiGreen}`};
-    width: 57.2ch;
-    margin-left: 4.1rem;
+
+    @media only screen and (min-width: 40em) {
+      width: 57.2ch;
+      margin-left: 4.1rem;
+    }
   }
 `;
 

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { BannerCardsContainer } from "../Banner/BannerCards/style";
 import { ButtonComponent } from "../Button/style";
+import { Wrapper as SolutionsWrapper } from "../Solutions/style";
 
 export const CardComponent = styled.div`
   display: flex;
@@ -19,7 +20,24 @@ export const CardComponent = styled.div`
 
     ${ButtonComponent} {
       border-color: ${({ theme }) => theme.colors.jussiPink};
-      color: ${({ theme }) => theme.colors.jussiPink}; 
+      color: ${({ theme }) => theme.colors.jussiPink};
+    }
+  }
+
+  ${SolutionsWrapper} & {
+    border: ${({ theme }) => `1px solid ${theme.colors.gray}`};
+    padding: 1rem;
+    gap: 1rem;
+    min-width: 241px;
+
+    .ProductImage {
+      background: ${({ theme }) => theme.colors.gray};
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      height: 100px;
     }
   }
 `;

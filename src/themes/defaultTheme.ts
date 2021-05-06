@@ -4,10 +4,12 @@ export type DefaultThemeType = {
     black: string;
     jussiGreen: string;
     gray: string;
+    darkGray: string;
     jussiPink: string;
   };
   fonts: Array<string>;
   fontSizes: {
+    small: string;
     regular: string;
     medium: string;
     large: string;
@@ -32,11 +34,13 @@ const DefaultTheme: DefaultThemeType = {
     white: "hsl(100, 100%, 100%)",
     black: "hsl(0, 0%, 0%)",
     gray: "hsl(0, 0%, 95%)",
+    darkGray: "hsl(0, 0%, 36%)",
     jussiGreen: "hsl(159, 100%, 51%)",
     jussiPink: "hsl(330, 89%, 49%)",
   },
   fonts: ["Barlow"],
   fontSizes: {
+    small: "0.75rem",
     regular: "1rem",
     medium: "2rem",
     large: "4rem",

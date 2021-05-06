@@ -44,6 +44,7 @@ export const BannerComponent = styled.section`
       "title cards"
       "text cards"
       "button cards";
+    grid-template-columns: max-content auto;
     gap: 0 1.5625rem;
 
     .TitleContainer {

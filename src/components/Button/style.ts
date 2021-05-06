@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { HeaderComponent } from "../Header/style";
 import { ButtonProps } from "./button";
+import { Wrapper as SolutionsWrapper } from "../Solutions/style";
 
 export const ButtonComponent = styled.button<ButtonProps>`
   background: ${({ renderMode, theme }) =>
@@ -18,5 +19,9 @@ export const ButtonComponent = styled.button<ButtonProps>`
 
   ${HeaderComponent} & {
     padding: 0;
+  }
+
+  ${SolutionsWrapper} {
+    
   }
 `;

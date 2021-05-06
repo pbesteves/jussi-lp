@@ -12,13 +12,13 @@ export type TextProps = {
    *
    * Defaults to the color "black"
    */
-  color?: "white" | "black" | "gray" | "jussiGreen" | "jussiPink";
+  color?: "white" | "black" | "gray" | "darkGray" | "jussiGreen" | "jussiPink";
   /**
    * Defines the font-size of the text.
    *
    * Defaults to "regular"
    */
-  fontSize?: "regular" | "medium" | "large";
+  fontSize?: "small" | "regular" | "medium" | "large";
   /**
    * Defines the font-family of the text.
    *

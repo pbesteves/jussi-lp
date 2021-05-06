@@ -1,4 +1,5 @@
 import { ImageProps } from "./image";
+import { ImageComponent } from "./style";
 
 const Image = ({ urls, alt, width, height }: ImageProps) => {
   return (
@@ -12,7 +13,7 @@ const Image = ({ urls, alt, width, height }: ImageProps) => {
           />
         ))}
 
-      <img src={urls.src} alt={alt} width={width} height={height} />
+      <ImageComponent src={urls.src} alt={alt} width={width} height={height} />
     </picture>
   );
 };

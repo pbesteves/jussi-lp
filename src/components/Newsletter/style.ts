@@ -8,7 +8,7 @@ export const Wrapper = styled.section`
   width: 100%;
 
   h2 {
-    width: 20ch;
+    width: 18ch;
     line-height: 40px;
     margin-bottom: 2.625rem;
   }

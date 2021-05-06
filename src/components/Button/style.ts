@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { HeaderComponent } from "../Header/style";
+import { Label } from "../Input/style";
 import { ButtonProps } from "./button";
-import { Wrapper as SolutionsWrapper } from "../Solutions/style";
 
 export const ButtonComponent = styled.button<ButtonProps>`
   background: ${({ renderMode, theme }) =>
@@ -21,7 +21,10 @@ export const ButtonComponent = styled.button<ButtonProps>`
     padding: 0;
   }
 
-  ${SolutionsWrapper} {
-    
+  ${Label} & {
+    padding: 0;
+    background: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.jussiGreen};
+    border-radius:0;
   }
 `;

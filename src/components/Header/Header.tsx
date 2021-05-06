@@ -19,7 +19,7 @@ const Header = () => {
         id="serch-input"
         placeholder="Buscar"
         className="SearchInput"
-        icon={<SearchIcon className="SearchIcon"/>}
+        children={<SearchIcon className="SearchIcon" />}
       />
       <Button renderMode="only-text" className="LoginTrigger">
         Login

@@ -15,4 +15,24 @@ export const Wrapper = styled.section`
   span {
     margin-bottom: 0.5rem;
   }
+
+  @media only screen and (min-width: 48em) {
+    align-items: center;
+    .TextWrapper {
+      display: flex;
+      align-items: baseline;
+
+      span {
+        margin-right: 2rem;
+      }
+
+      h2 {
+        width: 27ch;
+        text-align: center;
+      }
+    }
+  }
+  @media only screen and (min-width: 48em) {
+    padding: 8.5rem 0;
+  }
 `;

@@ -10,11 +10,11 @@ const TextInput = ({
   id,
   label,
   className,
+  children,
   disabled,
   onBlur,
   onChange,
   onFocus,
-  icon,
   required,
   placeholder,
 }: InputProps & typeof defaultInputProps) => {
@@ -53,7 +53,7 @@ const TextInput = ({
         required={required}
         placeholder={placeholder}
       />
-      {icon ? icon : ""}
+      {children ? children : ""}
     </Label>
   );
 };

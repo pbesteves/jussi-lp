@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { HeaderComponent } from "../Header/style";
+import { Wrapper as NewsletterWrapper } from "../Newsletter/style";
 import { InputProps } from "./input";
 
 export const Label = styled.label`
@@ -10,6 +11,13 @@ export const Label = styled.label`
     position: absolute;
     right: 1.1875rem;
     top: 0.3125rem;
+  }
+
+  ${NewsletterWrapper} & {
+    border: 0;
+    border-bottom: ${({ theme }) => `1px solid ${theme.colors.jussiGreen}`};
+    width: 57.2ch;
+    margin-left: 4.1rem;
   }
 `;
 
@@ -27,6 +35,22 @@ export const TextInputComponent = styled.input<InputProps>`
     &::placeholder {
       color: ${({ placeholderColor, theme }) =>
         placeholderColor ? placeholderColor : theme.colors.jussiPink};
+    }
+  }
+
+  ${NewsletterWrapper} & {
+    background: ${({ theme }) => theme.colors.black};
+    border: 0;
+    padding: 1.125rem 0;
+    color: ${({ theme }) => theme.colors.white};
+
+    &::placeholder {
+      color: ${({ placeholderColor, theme }) =>
+        placeholderColor ? placeholderColor : theme.colors.white};
+    }
+
+    &:focus {
+      outline: 1px solid ${({ theme }) => theme.colors.jussiGreen};
     }
   }
 `;

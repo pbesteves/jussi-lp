@@ -3,7 +3,7 @@ import React from "react";
 export type InputProps = {
   className?: string;
   disabled?: boolean;
-  icon?: React.ReactNode;
+  children?: React.ReactNode;
   id: string;
   label?: string;
   placeholder?: string;

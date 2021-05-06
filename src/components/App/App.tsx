@@ -5,6 +5,7 @@ import About from "../About";
 import Banner from "../Banner";
 import Contact from "../Contact";
 import Header from "../Header";
+import Newsletter from "../Newsletter";
 import Solutions from "../Solutions";
 import Stores from "../Stores";
 import { AppComponent } from "./style";
@@ -27,6 +28,7 @@ const App = () => {
         <Solutions />
         <About />
         <Contact />
+        <Newsletter />
       </AppComponent>
     </Router>
   );

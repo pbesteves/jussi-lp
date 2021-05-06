@@ -64,7 +64,11 @@ export const Wrapper = styled.section`
       height: 100%;
     }
   }
-  @media only screen and (min-width: 80em) {
+  @media only screen and (min-width: 90em) {
+    grid-template-rows: 44.375rem;
+    .About {
+      margin-left: 13rem;
+    }
     .RightBlock {
       background: ${({ theme }) => theme.colors.gray};
       display: block;

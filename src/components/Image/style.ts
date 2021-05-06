@@ -14,6 +14,10 @@ export const ImageComponent = styled.img`
 
   ${AboutWrapper} & {
     width: 58%;
+
+    @media only screen and (min-width: 90em) {
+      width: 100%;
+    }
   }
 `;
 
@@ -25,5 +29,10 @@ export const Picture = styled.picture`
     justify-content: flex-end;
     align-self: center;
     justify-self: baseline;
+
+    @media only screen and (min-width: 90em) {
+      margin-right: 13rem;
+      justify-self: end;
+    }
   }
 `;

@@ -12,4 +12,5 @@ export type SearchResultProps = {
     launch_success: boolean;
     id: string;
   }>;
+  hide: boolean;
 };

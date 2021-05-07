@@ -22,6 +22,17 @@ export const Label = styled.label`
       margin-left: 4.1rem;
     }
   }
+
+  ${SearchWrapper} & {
+    width: 30ch;
+
+    @media only screen and (min-width: 48em) {
+      width: 40ch;
+    }
+    @media only screen and (min-width: 80em) {
+      width: 30ch;
+    }
+  }
 `;
 
 export const TextInputComponent = styled.input<InputProps>`

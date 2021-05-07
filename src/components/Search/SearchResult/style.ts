@@ -3,13 +3,25 @@ import styled from "styled-components";
 export const SearchResultComponent = styled.ul`
   position: absolute;
   background: ${({ theme }) => theme.colors.white};
-  width: 91.2%;
-  top: 34px;
-  left: 10px;
+  width: 59.2%;
+  top: 42px;
+  left: 75px;
   box-shadow: ${({ theme }) => theme.boxShadows.large};
 
   border-bottom-right-radius: ${({ theme }) => theme.borderRadius.small};
   border-bottom-left-radius: ${({ theme }) => theme.borderRadius.small};
+
+  @media only screen and (min-width: 48em) {
+    width: 38%;
+    top: 42px;
+    left: 238px;
+  }
+
+  @media only screen and (min-width: 80em) {
+    width: 88.2%;
+    top: 42px;
+    left: 16px;
+  }
 `;
 
 export const Result = styled.li`
@@ -39,5 +51,26 @@ export const Result = styled.li`
       grid-area: missionStatus;
       grid-row: 1;
     }
+  }
+`;
+
+export const ResultLoading = styled.div`
+  background: ${({ theme }) => theme.colors.white};
+  width: 13.0625rem;
+  box-shadow: ${({ theme }) => theme.boxShadows.large};
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: ${({ theme }) => theme.borderRadius.small};
+  border-bottom-right-radius: ${({ theme }) => theme.borderRadius.small};
+  position: absolute;
+  top: 42px;
+
+  @media only screen and (min-width: 48em) {
+    width: 18.063rem;
+  }
+  @media only screen and (min-width: 80em) {
+    width: 13.0625rem;
+    top: 34px;
   }
 `;

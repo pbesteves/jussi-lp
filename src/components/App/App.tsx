@@ -26,7 +26,7 @@ const App = () => {
     <Router>
       <AppComponent>
         <Header toggleNavigation={onClickHandler} />
-        <HomePage />4
+        <HomePage />
         <Footer />
         {toggleNavigation && <Navigation onClick={onClickHandler} />}
       </AppComponent>

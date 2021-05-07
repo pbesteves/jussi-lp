@@ -66,12 +66,18 @@ export const Wrapper = styled.section`
     }
   }
 
+  @media only screen and (min-width: 80em) {
+    .About {
+      margin-left: 8.5rem;
+      padding-top: 0;
+      padding-bottom: 3.7rem;
+    }
+  }
+
   @media only screen and (min-width: 90em) {
     grid-template-rows: 44.375rem;
     .About {
       margin-left: 13rem;
-      padding-top: 0;
-      padding-bottom: 3.7rem;
     }
     .RightBlock {
       background: ${({ theme }) => theme.colors.gray};

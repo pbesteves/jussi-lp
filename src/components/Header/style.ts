@@ -24,10 +24,6 @@ export const HeaderComponent = styled.header`
     grid-area: search;
   }
 
-  .SearchInput {
-    display: none;
-  }
-
   .LoginTrigger {
     display: none;
   }
@@ -55,9 +51,5 @@ export const HeaderComponent = styled.header`
     padding: 1.25rem 1.5rem;
     grid-template-columns: 9.6875rem max-content auto 17rem 3.9375rem 2.5rem;
 
-    .SearchInput {
-      grid-area: search;
-      display: block;
-    }
   }
 `;

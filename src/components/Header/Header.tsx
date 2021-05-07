@@ -1,10 +1,11 @@
+import React from "react";
 import { ReactComponent as CartIcon } from "../../assets/icons/cart.svg";
 import { ReactComponent as JussiLogo } from "../../assets/icons/jussi.svg";
 import { ReactComponent as MenuIcon } from "../../assets/icons/menu.svg";
 import { ReactComponent as SearchIcon } from "../../assets/icons/search.svg";
 import Button from "../Button";
-import TextInput from "../Input";
 import NavBar from "../NavBar";
+import SearchBar from "../Search";
 import { HeaderComponent } from "./style";
 
 const Header = () => {
@@ -15,12 +16,7 @@ const Header = () => {
       </Button>
       <JussiLogo width={130} className="Logo" />
       <NavBar className="Navigation" />
-      <TextInput
-        id="serch-input"
-        placeholder="Buscar"
-        className="SearchInput"
-        children={<SearchIcon className="SearchIcon" />}
-      />
+      <SearchBar />
       <Button renderMode="only-text" className="LoginTrigger">
         Login
       </Button>

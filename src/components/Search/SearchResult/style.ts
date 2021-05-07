@@ -1,0 +1,43 @@
+import styled from "styled-components";
+
+export const SearchResultComponent = styled.ul`
+  position: absolute;
+  background: ${({ theme }) => theme.colors.white};
+  width: 91.2%;
+  top: 34px;
+  left: 10px;
+  box-shadow: ${({ theme }) => theme.boxShadows.large};
+
+  border-bottom-right-radius: ${({ theme }) => theme.borderRadius.small};
+  border-bottom-left-radius: ${({ theme }) => theme.borderRadius.small};
+`;
+
+export const Result = styled.li`
+  display: grid;
+  grid-template-areas:
+    "thumbnail missionName"
+    "thumbnail ."
+    "thumbnail missionStatus";
+  gap: 0 0.5rem;
+  padding: 0.5rem 0.5rem;
+
+  grid-template-columns: 60px 135px;
+  grid-template-rows: 90px;
+  cursor: pointer;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
+
+  .TextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .MissionName {
+      grid-area: missionName;
+      grid-row: 1;
+    }
+
+    .MissionStatus {
+      grid-area: missionStatus;
+      grid-row: 1;
+    }
+  }
+`;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { HeaderComponent } from "../Header/style";
 import { Wrapper as NewsletterWrapper } from "../Newsletter/style";
+import { Wrapper as SearchWrapper } from "../Search/style";
 import { InputProps } from "./input";
 
 export const Label = styled.label`
@@ -32,7 +32,7 @@ export const TextInputComponent = styled.input<InputProps>`
 
   font-family: ${({ theme }) => theme.fonts};
 
-  ${HeaderComponent} & {
+  ${SearchWrapper} & {
     border-radius: ${({ theme }) => theme.borderRadius.large};
 
     &::placeholder {

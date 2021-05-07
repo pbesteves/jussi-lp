@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Wrapper as AboutWrapper } from "../About/style";
 import { Wrapper as SolutionsWrapper } from "../Solutions/style";
-
+import { Result } from "../Search/SearchResult/style";
 export const ImageComponent = styled.img`
   display: flex;
   align-items: center;
@@ -18,6 +18,9 @@ export const ImageComponent = styled.img`
     @media only screen and (min-width: 90em) {
       width: 100%;
     }
+  }
+  ${Result} & {
+    grid-area: thumbnail;
   }
 `;
 

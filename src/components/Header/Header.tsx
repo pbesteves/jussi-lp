@@ -6,14 +6,20 @@ import { ReactComponent as SearchIcon } from "../../assets/icons/search.svg";
 import Button from "../Button";
 import NavBar from "../NavBar";
 import SearchBar from "../Search";
+import { HeaderProps } from "./header";
 import { HeaderComponent } from "./style";
 
-const Header = () => {
+const Header = ({ toggleNavigation }: HeaderProps) => {
   const [expandSearch, setExpandSearch] = useState(false);
+  
   return (
     <>
       <HeaderComponent>
-        <Button renderMode="only-icon" className="MenuTrigger">
+        <Button
+          renderMode="only-icon"
+          className="MenuTrigger"
+          onClick={toggleNavigation}
+        >
           <MenuIcon />
         </Button>
         <JussiLogo width={130} className="Logo" />

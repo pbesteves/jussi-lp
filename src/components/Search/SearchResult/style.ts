@@ -7,9 +7,9 @@ export const SearchResultComponent = styled.ul`
   top: 42px;
   left: 75px;
   box-shadow: ${({ theme }) => theme.boxShadows.large};
-
   border-bottom-right-radius: ${({ theme }) => theme.borderRadius.small};
   border-bottom-left-radius: ${({ theme }) => theme.borderRadius.small};
+  z-index: 1;
 
   @media only screen and (min-width: 48em) {
     width: 38%;
@@ -32,11 +32,11 @@ export const Result = styled.li`
     "thumbnail missionStatus";
   gap: 0 0.5rem;
   padding: 0.5rem 0.5rem;
-
   grid-template-columns: 60px 135px;
   grid-template-rows: 90px;
   cursor: pointer;
   border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
+  
 
   .TextContainer {
     display: flex;

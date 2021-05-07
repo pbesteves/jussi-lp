@@ -9,7 +9,7 @@ const NavBar = ({ className }: NavbarProps) => {
         <Link to="/solucoes">Nossas soluções</Link>
       </li>
       <li>
-        <Link to="jussi">Conheça a Jüssi</Link>
+        <Link to="/jussi">Conheça a Jüssi</Link>
       </li>
     </NavbarComponent>
   );

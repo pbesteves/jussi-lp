@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   background: ${({ theme }) => theme.colors.gray};
   cursor: grab;
   scroll-behavior: smooth;
-
+  transform: translate3d(0, 0, 0);
   img {
     margin-right: 3rem;
   }
@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
     padding-left: 8.55rem;
     overflow-x: hidden;
   }
-  
+
   @media only screen and (min-width: 90em) {
     cursor: default;
     padding-left: 11rem;

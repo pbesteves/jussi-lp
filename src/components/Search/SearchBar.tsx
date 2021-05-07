@@ -52,7 +52,7 @@ const SearchBar = ({ expanded }: SearchBarProps) => {
   const onBlurHandler = () => {
     setHideResults(false);
   };
-  
+
   return (
     <Wrapper expanded={expanded}>
       <TextInput

@@ -8,7 +8,7 @@ export const Wrapper = styled.section`
   gap: 1.2rem;
   padding: 1.2rem;
   cursor: grab;
-
+  transform: translate3d(0, 0, 0);
   .TitleWrapper {
     display: flex;
     span {

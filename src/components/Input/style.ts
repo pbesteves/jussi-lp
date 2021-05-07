@@ -26,11 +26,17 @@ export const Label = styled.label`
   ${SearchWrapper} & {
     width: 30ch;
 
+    svg {
+      display: none;
+    }
     @media only screen and (min-width: 48em) {
       width: 40ch;
     }
     @media only screen and (min-width: 80em) {
       width: 30ch;
+      svg {
+        display: block;
+      }
     }
   }
 `;

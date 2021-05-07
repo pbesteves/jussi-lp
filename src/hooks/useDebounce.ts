@@ -1,7 +1,6 @@
-// Hook
-
 import { useEffect, useState } from "react";
 
+// https://usehooks.com/useDebounce/
 // T is a generic type for value parameter, our case this will be string
 function useDebounce<T>(value: T, delay: number): T {
   // State and setters for debounced value
@@ -27,4 +26,4 @@ function useDebounce<T>(value: T, delay: number): T {
   return debouncedValue;
 }
 
-export default useDebounce
+export default useDebounce;

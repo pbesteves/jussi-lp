@@ -25,6 +25,6 @@ export const ButtonComponent = styled.button<ButtonProps>`
     padding: 0;
     background: ${({ theme }) => theme.colors.black};
     color: ${({ theme }) => theme.colors.jussiGreen};
-    border-radius:0;
+    border-radius: 0;
   }
 `;

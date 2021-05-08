@@ -4,19 +4,17 @@ import { ReactComponent as SearchIcon } from "../../assets/icons/search.svg";
 import useDebounce from "../../hooks/useDebounce";
 import TextInput from "../Input";
 import Text from "../Text";
+import { SearchBarProps } from "./searchBar";
 import SearchResult from "./SearchResult";
 import { ResultLoading } from "./SearchResult/style";
 import { Wrapper } from "./style";
 
-export type SearchBarProps = {
-  expanded?: boolean;
-};
 
-const GET_PAST_LAUNCHES = gql`
+
+export const GET_PAST_LAUNCHES = gql`
   query GetPastLaunches($limit: Int!, $find: LaunchFind!) {
     launchesPast(limit: $limit, find: $find) {
       mission_name
-      launch_date_local
       launch_site {
         site_name
       }

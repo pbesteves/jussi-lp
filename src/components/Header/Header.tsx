@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { lazy, Suspense, useState } from "react";
 import { ReactComponent as CartIcon } from "../../assets/icons/cart.svg";
 import { ReactComponent as JussiLogo } from "../../assets/icons/jussi.svg";
 import { ReactComponent as MenuIcon } from "../../assets/icons/menu.svg";
@@ -9,9 +9,11 @@ import SearchBar from "../Search";
 import { HeaderProps } from "./header";
 import { HeaderComponent } from "./style";
 
+const SearchBarMobile = lazy(() => import("../Search"));
+
 const Header = ({ toggleNavigation }: HeaderProps) => {
   const [expandSearch, setExpandSearch] = useState(false);
-  
+
   return (
     <>
       <HeaderComponent>
@@ -28,7 +30,11 @@ const Header = ({ toggleNavigation }: HeaderProps) => {
         <Button renderMode="only-text" className="LoginTrigger">
           Login
         </Button>
-        <Button renderMode="only-icon" className="CartTrigger">
+        <Button
+          renderMode="only-icon"
+          className="CartTrigger"
+          aria-label="Toggle search bar"
+        >
           <CartIcon />
         </Button>
         <Button
@@ -39,7 +45,11 @@ const Header = ({ toggleNavigation }: HeaderProps) => {
           <SearchIcon />
         </Button>
       </HeaderComponent>
-      <SearchBar expanded={expandSearch} />
+      {expandSearch && (
+        <Suspense fallback="">
+          <SearchBarMobile expanded={expandSearch} />
+        </Suspense>
+      )}
     </>
   );
 };

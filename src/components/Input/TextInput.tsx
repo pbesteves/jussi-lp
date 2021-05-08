@@ -18,12 +18,10 @@ const TextInput = ({
   required,
   placeholder,
 }: InputProps & typeof defaultInputProps) => {
-  const [, setIsFocused] = useState(false);
   const [inputValue, setInputValue] = useState("");
 
   const onBlurHandler = (e: React.ChangeEvent<HTMLInputElement>): void => {
     e.persist();
-    if (inputValue.length === 0) setIsFocused(false);
     onBlur && onBlur(e);
   };
 
@@ -35,7 +33,6 @@ const TextInput = ({
 
   const onFocusHandler = (e: React.ChangeEvent<HTMLInputElement>): void => {
     e.persist();
-    setIsFocused(true);
     onFocus && onFocus(e);
   };
 

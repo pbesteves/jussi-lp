@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "test:coverage": "jest --collectCoverage --color"
+    "test:coverage": "react-scripts test --collectCoverage"
   },
   "eslintConfig": {
     "extends": [
@@ -45,10 +45,28 @@
   },
   "devDependencies": {
     "@apollo/client": "^3.3.16",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-react": "^7.13.13",
     "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.9",
     "@types/webfontloader": "^1.6.32",
+    "msw": "^0.28.2",
     "styled-components": "^5.3.0",
     "webfontloader": "^1.6.28"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-env"
+    ]
+  },
+  "msw": {
+    "workerDirectory": "public"
+  },
+  "jest": {
+    "collectCoverageFrom":["src/**/*.tsx"],
+    "coveragePathIgnorePatterns": [
+      "src/index.tsx"
+    ]
   }
 }

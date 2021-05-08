@@ -1,16 +1,12 @@
-import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+import { ApolloProvider } from "@apollo/client";
 import React from "react";
 import ReactDOM from "react-dom";
 import { ThemeProvider } from "styled-components";
+import { client } from "./ApolloClient";
 import App from "./components/App";
 import GlobalStyles from "./globalStyles";
 import reportWebVitals from "./reportWebVitals";
 import DefaultTheme from "./themes/defaultTheme";
-
-const client = new ApolloClient({
-  uri: "https://api.spacex.land/graphql/",
-  cache: new InMemoryCache(),
-});
 
 ReactDOM.render(
   <React.StrictMode>

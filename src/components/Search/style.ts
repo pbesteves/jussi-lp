@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { HeaderComponent } from "../Header/style";
-import { SearchBarProps } from "./SearchBar";
+import { SearchBarProps } from "./searchBar";
 
 export const Wrapper = styled.div<SearchBarProps>`
   position: relative;

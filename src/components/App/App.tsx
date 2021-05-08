@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import WebFont from "webfontloader";
-import Footer from "../../Components/Footer";
+import Footer from "../Footer";
 import Header from "../Header";
 import HomePage from "../HomePage";
 import Navigation from "../Navigation";

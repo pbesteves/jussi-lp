@@ -35,7 +35,7 @@ const SearchBar = ({ expanded }: SearchBarProps) => {
   const debouncedSearchTerm: string = useDebounce(searchString, 500);
 
   const { data, loading } = useQuery(GET_PAST_LAUNCHES, {
-    skip: searchString.length === 0,
+    skip: searchString.length === 0 || searchString.length < 3,
     variables: {
       limit: 5,
       find: {

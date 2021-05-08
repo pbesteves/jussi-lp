@@ -39,5 +39,9 @@ export const CardComponent = styled.div`
       width: 100px;
       height: 100px;
     }
+
+    @supports not (gap: 1rem) {
+      margin: 1rem 0;
+    }
   }
 `;

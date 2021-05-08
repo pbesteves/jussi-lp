@@ -3,7 +3,7 @@ import { ReactComponent as InstagramIcon } from "../../assets/icons/instagram.sv
 import { ReactComponent as LinkedInIcon } from "../../assets/icons/linkedin.svg";
 import WppLogo from "../../assets/images/wppcompany.svg";
 import WppLogoLarge from "../../assets/images/wppcompany@2x.svg";
-import Image from "../../components/Image";
+import Image from "../Image";
 import { Wrapper } from "./style";
 
 const Footer = () => {

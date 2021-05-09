@@ -9,7 +9,7 @@
 For the development of this landing page the technologies used were 
 <a href='https://reactjs.org/' target='_blank'>React</a>, 
 <a href='https://styled-components.com/' target='_blank'>Styled-Components</a>, 
-<a href='https://www.apollographql.com/docs/react/' target='blank'>Apollo Client</a>, 
+<a href='https://www.apollographql.com/docs/react/' target='_blank'>Apollo Client</a>, 
 <a href='https://webpack.js.org/' target='_blank'>Webpack</a>, 
 <a href='https://babeljs.io/' target='_blank'>Babel</a>, 
 <a href='https://jestjs.io/pt-BR/' target='_blank'>Jest</a>, 

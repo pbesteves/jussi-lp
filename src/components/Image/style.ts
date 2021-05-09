@@ -14,16 +14,20 @@ export const ImageComponent = styled.img`
 
   ${AboutWrapper} & {
     width: 58%;
+
     @media only screen and (min-width: 48em) {
       width: 84%;
     }
+
     @media only screen and (min-width: 80em) {
       width: 80%;
     }
+
     @media only screen and (min-width: 90em) {
       width: 100%;
     }
   }
+
   ${Result} & {
     grid-area: thumbnail;
   }
@@ -32,6 +36,7 @@ export const ImageComponent = styled.img`
 export const Picture = styled.picture`
   ${AboutWrapper} & {
     display: none;
+
     @media only screen and (min-width: 48em) {
       display: flex;
       justify-content: flex-end;
@@ -43,7 +48,7 @@ export const Picture = styled.picture`
     }
 
     @media only screen and (min-width: 80em) {
-      margin-right: 0rem;
+      margin-right: 0;
       justify-self: end;
     }
 

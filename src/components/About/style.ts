@@ -46,7 +46,7 @@ export const Wrapper = styled.section`
       grid-row: 1;
       padding: 0;
       display: grid;
-      grid-template-columns: 240px 463px;
+      grid-template-columns: 15rem 28.9375rem;
 
       h2 {
         width: 11ch;
@@ -74,7 +74,7 @@ export const Wrapper = styled.section`
 
   @media only screen and (min-width: 80em) {
     .About {
-      grid-template-columns: 348px 676px;
+      grid-template-columns: 21.75rem 42.25rem;
       gap: 1.5rem 0;
       margin-left: 1.25rem;
       padding-top: 0;
@@ -91,7 +91,7 @@ export const Wrapper = styled.section`
       justify-self: center;
       margin-left: 0;
       padding: 0;
-      grid-template-columns: 241px 676px;
+      grid-template-columns: 15.0625rem 42.25rem;
 
       h2 {
         grid-row: 1;

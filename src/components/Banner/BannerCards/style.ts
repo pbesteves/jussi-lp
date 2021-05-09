@@ -4,7 +4,7 @@ export const BannerCardsContainer = styled.div`
   display: grid;
   width: 80%;
   max-width: 461px;
-  grid-template-columns: repeat(2, 209px);
+  grid-template-columns: repeat(2, 13.0625rem);
   gap: 2.625rem;
 
   .BottomCard {

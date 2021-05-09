@@ -25,7 +25,7 @@ export const CardComponent = styled.div`
   }
 
   ${SolutionsWrapper} & {
-    border: ${({ theme }) => `1px solid ${theme.colors.gray}`};
+    border: 1px solid ${({ theme }) => theme.colors.gray};
     padding: 1rem;
     gap: 1rem;
     min-width: 241px;

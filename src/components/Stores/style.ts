@@ -9,11 +9,13 @@ export const Wrapper = styled.div`
   cursor: grab;
   scroll-behavior: smooth;
   transform: translate3d(0, 0, 0);
+
   .Content {
     display: flex;
     max-width: 1024px;
     align-items: center;
   }
+
   img {
     margin-right: 3rem;
   }

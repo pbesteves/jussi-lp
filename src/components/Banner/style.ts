@@ -46,10 +46,10 @@ export const BannerComponent = styled.section`
         "text cards"
         "button cards";
 
-      grid-template-columns: 538px 460px;
+      grid-template-columns: 33.625rem 28.75rem;
       gap: 0 3.5625rem;
       align-self: center;
-      margin-right: 125px;
+      margin-right: 7.8125rem;
     }
 
     .TitleContainer {

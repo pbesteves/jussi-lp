@@ -29,11 +29,14 @@ export const Label = styled.label`
     svg {
       display: none;
     }
+
     @media only screen and (min-width: 48em) {
       width: 40ch;
     }
+
     @media only screen and (min-width: 80em) {
       width: 30ch;
+
       svg {
         display: block;
       }
@@ -43,10 +46,8 @@ export const Label = styled.label`
 
 export const TextInputComponent = styled.input<InputProps>`
   width: 100%;
-
-  border: ${({ theme }) => `1px solid ${theme.colors.gray}`};
-  padding: 8px 16px;
-
+  border: 1px solid ${({ theme }) => theme.colors.gray};
+  padding: 0.5rem 1rem;
   font-family: ${({ theme }) => theme.fonts};
 
   ${SearchWrapper} & {

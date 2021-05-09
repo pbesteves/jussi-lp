@@ -12,6 +12,7 @@ export const Wrapper = styled.section`
 
   .TitleWrapper {
     display: flex;
+
     span {
       margin-right: 0.25rem;
     }
@@ -24,10 +25,12 @@ export const Wrapper = styled.section`
     ul {
       list-style-type: initial;
       margin-left: 0.7rem;
+
       li {
         line-height: 18px;
+
         &::marker {
-          font-size: 10px;
+          font-size: 0.625rem;
         }
       }
     }

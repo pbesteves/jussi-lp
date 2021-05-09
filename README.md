@@ -2,6 +2,7 @@
 
 - [Jüssi Landing Page](#jüssi-landing-page)
   - [Technologies](#technologies)
+    - [API](#api)
   - [Running the project](#running-the-project)
   - [Running the tests](#running-the-tests)
 
@@ -16,6 +17,24 @@ For the development of this landing page the technologies used were
 <a href='https://testing-library.com/docs/react-testing-library/intro/' target='_blank'>React Testing Library</a>, 
 <a href='https://mswjs.io/' target='_blank'>MSWJS (Mock Service Worker)</a>, and
 <a href='https://www.typescriptlang.org/' target='_blank'>Typescript</a>
+
+### API
+
+The project uses the SpaceX public GraphQL API in the search field. 
+It is using the LaunchesPast query to fetch data about the previous launches.
+Currently it is configured to limit the search to five results and find the launches
+by the `mission_name` attribute.
+
+Here are some of the names of the past missions
+
+<ul>
+    <li>Starlink</li> 
+    <li>Sentinel</li> 
+    <li>Crew</li> 
+    <li>GPS</li> 
+    <li>SAOCOM</li> 
+    <li>Dragon</li> 
+</ul>
 
 ## Running the project
 In order to run the project follow the steps bellow

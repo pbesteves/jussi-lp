@@ -40,19 +40,25 @@ export const Wrapper = styled.section`
     align-items: center;
 
     .About {
-      grid-column: 1 / 2;
-      justify-self: start;
-      margin-left: 1.2rem;
+      grid-column: 1 / span 3;
+      justify-self: center;
+      margin-left: 0;
       grid-row: 1;
-      padding: 2rem 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 240px 463px;
 
       h2 {
         width: 11ch;
         align-self: start;
+        grid-row: 1;
+        grid-column: 1;
       }
 
       p {
         width: 26ch;
+        grid-row: 2;
+        grid-column: 1;
       }
     }
 
@@ -68,17 +74,36 @@ export const Wrapper = styled.section`
 
   @media only screen and (min-width: 80em) {
     .About {
-      margin-left: 8.5rem;
+      grid-template-columns: 348px 676px;
+      gap: 1.5rem 0;
+      margin-left: 1.25rem;
       padding-top: 0;
-      padding-bottom: 3.7rem;
+      padding: 0;
     }
   }
 
   @media only screen and (min-width: 90em) {
     grid-template-rows: 44.375rem;
     .About {
-      margin-left: 13rem;
+      display: grid;
+      grid-column: 1 / span 3;
+      gap: 1.5rem 6.6875rem;
+      justify-self: center;
+      margin-left: 0;
+      padding: 0;
+      grid-template-columns: 241px 676px;
+
+      h2 {
+        grid-row: 1;
+        grid-column: 1;
+      }
+
+      p {
+        grid-row: 2;
+        grid-column: 1;
+      }
     }
+
     .RightBlock {
       background: ${({ theme }) => theme.colors.gray};
       display: block;

@@ -7,6 +7,7 @@ import { Wrapper } from "./style";
 const About = () => {
   return (
     <Wrapper>
+      <div className="RightBlock" />
       <div className="About">
         <Text as="h2" fontWeight="bold" fontSize="medium" uppercase>
           Olá, somos a Jüssi
@@ -19,9 +20,8 @@ const About = () => {
           Design, SEO, Tecnologia, Agile e User Behavior Analytics.
         </Text>
         <Button>Conheça a Jüssi</Button>
+        <Image urls={{ src: JussiPicture }} alt="Jussi" />
       </div>
-      <div className="RightBlock" />
-      <Image urls={{ src: JussiPicture }} alt="Jussi"/>
     </Wrapper>
   );
 };

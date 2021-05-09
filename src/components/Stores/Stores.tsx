@@ -12,50 +12,52 @@ import { Wrapper } from "./style";
 const Stores = () => {
   return (
     <Wrapper>
-      <Text>Nossas principais lojas VTEX</Text>
-      <Text>→</Text>
-      <Image
-        urls={{
-          src: LogoBrastemp,
-          srcSets: [
-            {
-              srcSet: LogoBrastempLarge,
-              screenWidth: "1280",
-            },
-          ],
-        }}
-        alt="Brastemp"
-      />
-      <Image
-        urls={{
-          src: LogoCompraCerta,
-          srcSets: [
-            {
-              srcSet: LogoCompraCertaLarge,
-              screenWidth: "1280",
-            },
-          ],
-        }}
-        alt="Compra Certa"
-      />
-      <Image
-        urls={{
-          src: LogoConsul,
-        }}
-        alt="Consul"
-      />
-      <Image
-        urls={{
-          src: LogoTheBar,
-          srcSets: [
-            {
-              srcSet: LogoTheBarLarge,
-              screenWidth: "1280",
-            },
-          ],
-        }}
-        alt="The Bar"
-      />
+      <div className="Content">
+        <Text>Nossas principais lojas VTEX</Text>
+        <Text>→</Text>
+        <Image
+          urls={{
+            src: LogoBrastemp,
+            srcSets: [
+              {
+                srcSet: LogoBrastempLarge,
+                screenWidth: "1280",
+              },
+            ],
+          }}
+          alt="Brastemp"
+        />
+        <Image
+          urls={{
+            src: LogoCompraCerta,
+            srcSets: [
+              {
+                srcSet: LogoCompraCertaLarge,
+                screenWidth: "1280",
+              },
+            ],
+          }}
+          alt="Compra Certa"
+        />
+        <Image
+          urls={{
+            src: LogoConsul,
+          }}
+          alt="Consul"
+        />
+        <Image
+          urls={{
+            src: LogoTheBar,
+            srcSets: [
+              {
+                srcSet: LogoTheBarLarge,
+                screenWidth: "1280",
+              },
+            ],
+          }}
+          alt="The Bar"
+        />
+      </div>
     </Wrapper>
   );
 };

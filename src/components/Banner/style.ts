@@ -37,23 +37,31 @@ export const BannerComponent = styled.section`
   }
 
   @media only screen and (min-width: 80em) {
-    padding: 5rem 7.375rem;
-    display: grid;
-    grid-template-areas:
-      ". cards"
-      "title cards"
-      "text cards"
-      "button cards";
-    grid-template-columns: max-content auto;
-    gap: 0 1.5625rem;
+    padding: 5rem 0;
+    .Content {
+      display: grid;
+      grid-template-areas:
+        ". cards"
+        "title cards"
+        "text cards"
+        "button cards";
+
+      grid-template-columns: 538px 460px;
+      gap: 0 3.5625rem;
+      align-self: center;
+      margin-right: 125px;
+    }
 
     .TitleContainer {
       grid-area: title;
+      .TitleDecorator {
+        margin-right: 2.225rem;
+      }
     }
 
     .BannerButton,
     .BannerParagraph {
-      margin-left: 5.4rem;
+      margin-left: 6.6rem;
     }
 
     .BannerButton {

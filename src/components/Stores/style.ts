@@ -9,6 +9,11 @@ export const Wrapper = styled.div`
   cursor: grab;
   scroll-behavior: smooth;
   transform: translate3d(0, 0, 0);
+  .Content {
+    display: flex;
+    max-width: 1024px;
+    align-items: center;
+  }
   img {
     margin-right: 3rem;
   }
@@ -21,6 +26,13 @@ export const Wrapper = styled.div`
 
   @media only screen and (min-width: 90em) {
     cursor: default;
-    padding-left: 11rem;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+
+    .Content {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 `;

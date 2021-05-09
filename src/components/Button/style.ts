@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Wrapper as AboutWrapper } from "../About/style";
 import { HeaderComponent } from "../Header/style";
 import { Label } from "../Input/style";
 import { ButtonProps } from "./button";
@@ -26,5 +27,19 @@ export const ButtonComponent = styled.button<ButtonProps>`
     background: ${({ theme }) => theme.colors.black};
     color: ${({ theme }) => theme.colors.jussiGreen};
     border-radius: 0;
+  }
+
+  ${AboutWrapper} & {
+    @media only screen and (min-width: 48em) {
+      grid-row: 3;
+      grid-column: 1;
+      justify-self: baseline;
+    }
+    @media only screen and (min-width: 90em) {
+      align-self: start;
+      grid-row: 3;
+      grid-column: 1;
+      justify-self: baseline;
+    }
   }
 `;

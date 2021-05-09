@@ -9,6 +9,7 @@ export const Wrapper = styled.section`
   padding: 1.2rem;
   cursor: grab;
   transform: translate3d(0, 0, 0);
+
   .TitleWrapper {
     display: flex;
     span {
@@ -41,6 +42,14 @@ export const Wrapper = styled.section`
   }
 
   @media only screen and (min-width: 90em) {
-    margin: 0 11.75rem;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+
+    .TitleWrapper {
+      align-self: flex-start;
+    }
   }
 `;

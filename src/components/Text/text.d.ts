@@ -2,7 +2,7 @@ export type TextProps = {
   /**
    * Tells the component which HTML Element should be used to render the component.
    *
-   * Defaults to the Paragraph tag
+   * Default: `<p>`
    * */
   as?: React.ElementType;
   children: React.ReactNode;
@@ -10,27 +10,35 @@ export type TextProps = {
   /**
    * Defines what color the text should be.
    *
-   * Defaults to the color "black"
+   * Defaults: `black`
    */
   color?: "white" | "black" | "gray" | "darkGray" | "jussiGreen" | "jussiPink";
   /**
    * Defines the font-size of the text.
    *
-   * Defaults to "regular"
+   * Defaults: `regular`
    */
   fontSize?: "small" | "regular" | "medium" | "large";
   /**
    * Defines the font-family of the text.
    *
-   * Defaults to "Inter"
+   * Defaults: `Inter`
    */
   fontFamily?: string;
   /**
    * Defines the font-weight of the text.
    *
-   * Defaults to "regular"
+   * Default: `regular`
    */
   fontWeight?: "regular" | "bold";
+  /**
+   * Sets the text to uppercase
+   */
   uppercase?: boolean;
+  /**
+   * Defines the width of the containing box
+   *
+   * Default: `max-content`
+   */
   width?: string;
 };

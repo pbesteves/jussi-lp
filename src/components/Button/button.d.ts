@@ -1,7 +1,13 @@
 import React from "react";
 
 export type ButtonProps = {
-  borderRadius: "small" | "large";
+  /**
+   * Defines the radius of the borders applied to the
+   * <Button />.
+   *
+   * Default: `xs`
+   */
+  borderRadius: "xxs" | "xs" | "small" | "large";
   children: React.ReactNode;
   className?: string;
   /**
@@ -15,10 +21,12 @@ export type ButtonProps = {
   /**
    * Indicates how the `<Button />` should be render
    * Options are
-   * - outline (default)
+   * - outline
    * - solid
    * - only-text
    * - only-icon
+   *
+   * Default: `outline`
    */
   renderMode?: "outline" | "solid" | "only-text" | "only-icon";
 };

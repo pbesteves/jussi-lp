@@ -1,4 +1,8 @@
 export type SearchResultProps = {
+  /**
+   * An array containing the data needed to populate the
+   * search.
+   */
   results: Array<{
     mission_name: string;
     launch_site: {
